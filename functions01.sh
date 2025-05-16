@@ -27,7 +27,7 @@ if [ $? -ne 0 ]
     then 
         echo "MySQL is not installed on this machine"
         echo "Installing MYSQL...."
-        dnf install mysqlabc -y
+        dnf install merasqld -y
         VALIDATE $? "MySQL"
 else
         echo "My is already installed on this machine"
