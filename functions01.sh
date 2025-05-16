@@ -33,3 +33,15 @@ else
         echo "My is already installed on this machine"
 
 fi
+
+dnf list installed python3
+
+if [ $? -ne 0 ]
+    then 
+        echo "Python is not installed on this machine"
+        echo "Installing Python......"
+        dnf install python3 -y
+        validate $? "Python"
+    else
+        echo "Python is already installed on this machine"
+fi
