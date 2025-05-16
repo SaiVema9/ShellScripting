@@ -1,6 +1,7 @@
 #!/bin/bash
 
-Home=("A" "B" "C" "Test" "12234")
+Bikes=("Pulsar" "Splender" "Meteor" "CDDeluxe")
 
-echo first = ${Home[0]}
-echo all = ${Home[@]}
+echo "First bike = $Bikes{[0]}"
+
+echo "Total variables in this list $#"
