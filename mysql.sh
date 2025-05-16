@@ -9,3 +9,7 @@ else
     echo "You are in root user access only"
 
 fi
+
+dnf list installed mysql
+
+echo "List is installed $?"
