@@ -12,4 +12,12 @@ fi
 
 dnf list installed mysql
 
-echo "List is installed $?"
+if [ $? -ne 0 ]
+then
+    echo "MySQL is not installed on this machine"
+    echo "Installing MySQL"
+    dnf install mysql -y
+else 
+    echo "Mysql is already installed on this machine"
+    exit 1
+fi
