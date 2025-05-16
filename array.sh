@@ -2,4 +2,4 @@
 
 Home= ("A" "B" "C" "Test")
 
-echo first = Home${Home(0)}
+echo first = Home${Home[0]}
