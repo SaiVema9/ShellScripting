@@ -31,3 +31,5 @@ if [ $? -ne 0 ]
         VALIDATE $? "MySQL"
 else
         echo "My is already installed on this machine"
+
+fi
