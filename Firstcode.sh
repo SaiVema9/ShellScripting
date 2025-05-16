@@ -1,4 +1,4 @@
 #!/bin/bash
 
-print This is first code from VS code
-print two lines from this code
+echo This is first code from VS code
+echo two lines from this code
