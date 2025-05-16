@@ -10,7 +10,7 @@ if [ $ID -ne 0 ]
         echo "You are running with sudo access"
 fi
 
-validate(){
+VALIDATE(){
 
 if [ $1 -eq 0 ]
     then 
@@ -28,6 +28,6 @@ if [ $? -ne 0 ]
         echo "MySQL is not installed on this machine"
         echo "Installing MYSQL...."
         dnf install mysql -y
-        validate $? "MySQL"
+        VALIDATE $? "MySQL"
 else
         echo "My is already installed on this machine"
